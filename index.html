@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>hypermd-katex</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <textarea id="input-box" cols="30" rows="10">I'm using $\KaTeX$ now!</textarea>
+
+  <!-- ----------------------------------------------------------------------------------- -->
+  <!-- CodeMirror -->
+
+  <link rel="stylesheet" href="./deps/codemirror.css">
+  <link rel="stylesheet" href="./deps/foldgutter.css">
+
+  <script src="./deps/codemirror.js"></script>
+
+  <script src="./deps/foldcode.js"></script>
+  <script src="./deps/foldgutter.js"></script>
+  <script src="./deps/markdown-fold.js"></script>
+
+  <script src="./deps/overlay.js"></script>
+  <script src="./deps/meta.js"></script>
+  <script src="./deps/markdown.js"></script>
+
+  <script src="./deps/xml.js"></script>
+  <script src="./deps/stex.js"></script>
+  <script src="./deps/yaml.js"></script>
+
+  <script src="./deps/javascript.js"></script>
+  <!-- load more for code blocks -->
+
+  <!-- ----------------------------------------------------------------------------------- -->
+  <!-- HyperMD -->
+
+  <link rel="stylesheet" href="./deps/hypermd.css">
+  <link rel="stylesheet" href="./deps/hypermd-light.css">
+
+  <script src="./deps/ai1.js"></script>
+
+  <!-- ----------------------------------------------------------------------------------- -->
+  <!-- KaTeX and hypermd-katex -->
+
+  <!-- Doesn't work for the font loading -->
+  <link rel="stylesheet" href="./deps/katex/katex.min.css">
+  <script src="./deps/katex/katex.min.js"></script>
+
+  <script src="./deps/index.js"></script>
+
+  <!-- ----------------------------------------------------------------------------------- -->
+  <!-- Let's ROCK -->
+
+  <script>
+    var myTextarea = document.getElementById('input-box')
+    var editor = HyperMD.fromTextArea(myTextarea, {
+      // for code fence highlighting
+    //   hmdModeLoader: "https://cdn.jsdelivr.net/npm/codemirror/",
+    })
+
+    // and that's all
+    // now you get a `editor` and you can do whatever you want
+    editor.setSize(null, "900px") // set height
+    editor.focus()
+  </script>
+</body>
+
+</html>
