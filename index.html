@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>hypermd-katex</title>
+  <title>Ponderings</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -53,10 +53,12 @@ img {
       padding: 0.2rem;
       border-radius: 0.5rem;
       margin: 0.5rem;
+      opacity: 0.3;
 
     }
 
     img:hover {
+      opacity: 0.8;
       background-color: rgba(118, 118, 118, 0.177);
     }
 
@@ -67,15 +69,25 @@ img {
 
 </style>
 
+<script>
+  function saveFile(){
+    var bb = new Blob([editor.getValue() ], { type: 'text/plain' });
+    var a = document.createElement('a');
+    a.download = 'ponderings.md';
+    a.href = window.URL.createObjectURL(bb);
+    a.click();
+  }
+
+</script>
+
 <body>
   <div style="display: flex; align-items: flex-end;">
-  <h1>Pondering</h1>
-  <img src="./deps/save.ico" width="20">
+  <h1>Ponderings</h1>
+  <img src="./deps/save.ico" width="20" onclick="saveFile()">
 </div>
 <h5>a markdown editor</h5>
 
-
-  <textarea id="input-box" cols="30" rows="10">I'm using $\KaTeX$ now!</textarea>
+  <textarea id="input-box" cols="30" rows="10"></textarea>
 
   <!-- ----------------------------------------------------------------------------------- -->
   <!-- CodeMirror -->
