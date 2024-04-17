@@ -137,10 +137,6 @@
 .cm-s-hypermd-light .CodeMirror-linenumber {
   color: #ccc;
 }
-.cm-s-hypermd-light .CodeMirror-gutters {
-  border-right: 10px solid #FFF;
-  padding-right: 5px;
-}
 .cm-s-hypermd-light .CodeMirror-line {
   padding: 0 5px;
 }

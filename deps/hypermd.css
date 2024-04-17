@@ -13,6 +13,7 @@
 }
 
 .CodeMirror {
+  margin: 10rem;
   /* adding some CodeMirror-not-implemented styles' default style */
   /* tooltip for addon/hover */
   /* gutter for addon/click */
