@@ -13,7 +13,7 @@
 }
 
 .CodeMirror {
-  margin: 5rem;
+  margin: 0 5rem 5rem 5rem;
   padding: 2rem;
   border-radius: 2rem;
   /* adding some CodeMirror-not-implemented styles' default style */

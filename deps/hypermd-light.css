@@ -151,16 +151,9 @@
   font-size: 24pt;
   color: #999;
 }
-.cm-s-hypermd-light pre.HyperMD-header-line:after, .cm-s-hypermd-light pre.HyperMD-header.HyperMD-header-1:after, .cm-s-hypermd-light pre.HyperMD-header.HyperMD-header-2:after {
-  display: block;
-  content: " ";
-  margin-top: 2px;
-  height: 1px;
-  background: #9d8d8d;
-}
 .cm-s-hypermd-light pre.HyperMD-header {
   line-height: 1.5 !important;
-  font-family: inherit !important;
+  font-family: Nightingale !important;
   padding-left: 5px !important;
   margin-left: 0 !important;
   border-left: 0 !important;

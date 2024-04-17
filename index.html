@@ -14,6 +14,52 @@ html {
     height: 100%;
 }
 
+body {
+  padding-top: 4rem;
+
+}
+
+@font-face {
+    font-family: Nightingale;
+    src: url(deps/DTNightingale-Light.ttf);
+}
+
+h1 {
+    font-family: Nightingale;
+    color: rgb(88, 80, 80);
+    padding-left: 6rem;
+    margin-bottom: 0;
+
+}
+
+h5 {
+  font-family: Nightingale;
+    color: rgb(88, 80, 80);
+    padding-left: 6.2rem;
+    margin-top: 0;
+    /* margin-bottom: 0.5; */
+}
+
+img { 
+        image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+        image-rendering: -moz-crisp-edges;          /* Firefox                        */
+        image-rendering: -o-crisp-edges;            /* Opera                          */
+        image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+        image-rendering: pixelated;                 /* Universal support since 2021   */
+        image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+        -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+        /* margin-left: auto;
+        display: block; */
+      padding: 0.2rem;
+      border-radius: 0.5rem;
+      margin: 0.5rem;
+
+    }
+
+    img:hover {
+      background-color: rgba(118, 118, 118, 0.177);
+    }
+
 /* body {
   height: auto;
   background-image: none;
@@ -22,6 +68,13 @@ html {
 </style>
 
 <body>
+  <div style="display: flex; align-items: flex-end;">
+  <h1>Pondering</h1>
+  <img src="./deps/save.ico" width="20">
+</div>
+<h5>a markdown editor</h5>
+
+
   <textarea id="input-box" cols="30" rows="10">I'm using $\KaTeX$ now!</textarea>
 
   <!-- ----------------------------------------------------------------------------------- -->
