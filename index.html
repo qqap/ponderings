@@ -127,12 +127,25 @@ img {
   <link rel="stylesheet" href="./deps/katex/katex.min.css">
   <script src="./deps/katex/katex.min.js"></script>
 
+
+
+  
   <script src="./deps/index.js"></script>
+  
+  <script src="./deps/deflate.js"></script>
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script> -->
+  <script src="./deps/plantuml.js"></script>
+  
 
   <!-- ----------------------------------------------------------------------------------- -->
   <!-- Let's ROCK -->
 
   <script>
+
+// mermaid.initialize({ theme: "neutral" })
+
+
     var myTextarea = document.getElementById('input-box')
     myTextarea.textContent = localStorage.getItem("bloby")
     var editor = HyperMD.fromTextArea(myTextarea, {
@@ -151,6 +164,11 @@ img {
   document.body.onkeyup = function (e) {
     localStorage.setItem("bloby", editor.getValue());
   };
+
+
+
+
+  
 </script>
 
 </html>
