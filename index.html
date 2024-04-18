@@ -40,7 +40,7 @@ h5 {
     /* margin-bottom: 0.5; */
 }
 
-img { 
+#save { 
         image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
         image-rendering: -moz-crisp-edges;          /* Firefox                        */
         image-rendering: -o-crisp-edges;            /* Opera                          */
@@ -57,7 +57,7 @@ img {
 
     }
 
-    img:hover {
+    #save:hover {
       opacity: 0.8;
       background-color: rgba(118, 118, 118, 0.177);
     }
@@ -83,7 +83,7 @@ img {
 <body>
   <div style="display: flex; align-items: flex-end;">
   <h1>Ponderings</h1>
-  <img src="./deps/save.ico" width="20" onclick="saveFile()">
+  <img src="./deps/save.ico" id="save" width="20" onclick="saveFile()">
 </div>
 <h5>a markdown editor</h5>
 
