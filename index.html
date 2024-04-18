@@ -134,6 +134,7 @@ img {
 
   <script>
     var myTextarea = document.getElementById('input-box')
+    myTextarea.textContent = localStorage.getItem("bloby")
     var editor = HyperMD.fromTextArea(myTextarea, {
       // for code fence highlighting
     //   hmdModeLoader: "https://cdn.jsdelivr.net/npm/codemirror/",
@@ -145,5 +146,11 @@ img {
     editor.focus()
   </script>
 </body>
+
+<script>
+  document.body.onkeyup = function (e) {
+    localStorage.setItem("bloby", editor.getValue());
+  };
+</script>
 
 </html>
