@@ -450,27 +450,6 @@
   padding: inherit;
   font-size: inherit;
 }
-.cm-s-hypermd-light div.HyperMD-codeblock-bg {
-  left: 0px;
-  right: 0px;
-  background-color: #FAFAFA;
-  border-left: 1px solid #CCC;
-  border-right: 1px solid #CCC;
-}
-.cm-s-hypermd-light div.HyperMD-codeblock-begin-bg {
-  border-top: 1px solid #CCC;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-}
-.cm-s-hypermd-light div.HyperMD-codeblock-end-bg {
-  border-bottom: 1px solid #CCC;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-}
-.cm-s-hypermd-light div.HyperMD-codeblock-begin-bg,
-.cm-s-hypermd-light div.HyperMD-codeblock-end-bg {
-  background-color: #F3F3F3;
-}
 .cm-s-hypermd-light .cm-formatting-link + .cm-formatting-link-string,
 .cm-s-hypermd-light .cm-formatting-link + .cm-formatting-link-string + .cm-url,
 .cm-s-hypermd-light .cm-formatting-link + .cm-formatting-link-string + .cm-url + .cm-formatting-link-string,
@@ -730,9 +709,6 @@
   margin: 0;
   position: absolute;
   z-index: 100;
-}
-.cm-s-hypermd-light .hmd-fold-code-image {
-  text-align: center;
 }
 .cm-s-hypermd-light pre.HyperMD-header,
 .cm-s-hypermd-light pre.HyperMD-footnote,
