@@ -94,6 +94,8 @@ h5 {
 
   <link rel="stylesheet" href="./deps/codemirror.css">
   <link rel="stylesheet" href="./deps/foldgutter.css">
+  <!-- <link rel="stylesheet" href="./deps/gruvbox.css"> -->
+
 
   <script src="./deps/codemirror.js"></script>
 
@@ -117,6 +119,8 @@ h5 {
 
   <link rel="stylesheet" href="./deps/hypermd.css">
   <link rel="stylesheet" href="./deps/hypermd-light.css">
+  <link rel="stylesheet" href="./deps/gruvbox.css">
+
 
   <script src="./deps/ai1.js"></script>
 
@@ -127,12 +131,12 @@ h5 {
   <link rel="stylesheet" href="./deps/katex/katex.min.css">
   <script src="./deps/katex/katex.min.js"></script>
 
-
-
   
   <script src="./deps/index.js"></script>
   
   <script src="./deps/deflate.js"></script>
+  <script src="./deps/plantuml-highlight.js"></script>
+
 
   <!-- <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script> -->
   <script src="./deps/plantuml.js"></script>
@@ -150,6 +154,7 @@ h5 {
     myTextarea.textContent = localStorage.getItem("bloby")
     var editor = HyperMD.fromTextArea(myTextarea, {
       // for code fence highlighting
+      // theme: "gruvbox-dark"
     //   hmdModeLoader: "https://cdn.jsdelivr.net/npm/codemirror/",
     })
 
