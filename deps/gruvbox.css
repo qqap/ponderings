@@ -11,7 +11,7 @@
 /* .HyperMD-codeblock { background-color: #c4c4c4 !important; color: #d0c3ac !important; } */
 .HyperMD-codeblock-begin, .HyperMD-codeblock-end { background-color: transparent !important; }
 
- .cm-header { color: #586e75 !important; }
+ /* .cm-header { color: #586e75 !important; } */
  .cm-quote { color: #93a1a1 !important; }
 
  .cm-keyword { color: #cb4b16 !important; }
