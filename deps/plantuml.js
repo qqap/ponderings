@@ -17,16 +17,18 @@
       var el = document.createElement('div');
       el.setAttribute('id', id);
       el.setAttribute('class', 'hmd-fold-code-image hmd-fold-code-mermaid');
-    //   mermaid.render(id, code, function (svgCode, bindFunctions) {
-    //       el.innerHTML = svgCode;
-    //       el.removeAttribute('id');
-    //       bindFunctions(el);
-    //       info.changed();
-    //   });
-    el.innerHTML = "<img src='https://www.plantuml.com/plantuml/svg/" + encode64(zip_deflate(unescape(encodeURIComponent(code)), 9)) + "' />";
+
+    data = fetch('https://www.plantuml.com/plantuml/svg/' + encode64(zip_deflate(unescape(encodeURIComponent(code)))))
+        .then(response => response.text())
+        .catch((error) => {
+            console.log(error);
+        }) 
+
+    data.then((value) => {
+        el.innerHTML += value;
+      });    
     
-    
-      return el;
+    return el;
   };
 //   if (mermaid) {
       registerRenderer({
