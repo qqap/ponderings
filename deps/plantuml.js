@@ -9,7 +9,6 @@
   })(function (exports, _$MOD1) {
     var registerRenderer = _$MOD1.registerRenderer;
   
-//   var mermaid = mermaid__ || window['mermaid'];
   var mermaidIdPrefix = "_mermaid_" + Math.random().toString(36).slice(2, 18) + "_";
   var mermaidCounter = 0;
   var mermaidRenderer = function (code, info) {
@@ -25,22 +24,18 @@
         }) 
 
     data.then((value) => {
-        el.innerHTML += value;
-      });    
+        el.innerHTML += value.replace('background:#FFFFFF','').replace(/textLength="\d+"/g, '');
+    });    
     
     return el;
   };
-//   if (mermaid) {
-      registerRenderer({
-          name: "mermaid",
-          pattern: /^plantuml$/i,
-          renderer: mermaidRenderer,
-          suggested: true,
-      });
-//   }
-//   else {
-//       console.error("[hypermd-mermaid] mermaid not found.");
-//   }
+
+    registerRenderer({
+        name: "mermaid",
+        pattern: /^plantuml$/i,
+        renderer: mermaidRenderer,
+        suggested: true,
+    });
   
   exports.mermaidRenderer = mermaidRenderer;
   });
