@@ -33,7 +33,7 @@ CodeMirror.defineSimpleMode('plantuml', {
       //   token: 'keyword'
       // },
       {
-        regex: /\b(abstract|actor|agent|class|component|database|enum|interface|node|note|object|participant|partition|rectangle|state|static|storage|usecase)\b/,
+        regex: /\b(abstract|actor|agent|class|cloud|component|database|enum|interface|node|note|object|participant|partition|rectangle|state|static|storage|usecase)\b/,
         token: 'keyword',
       },
       {
