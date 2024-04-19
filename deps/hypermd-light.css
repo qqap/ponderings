@@ -441,7 +441,7 @@
 }
 .cm-s-hypermd-light pre.HyperMD-codeblock {
   line-height: 1.2;
-  color: #473c3c;
+  color: #1d1b1b;
 }
 .cm-s-hypermd-light pre.HyperMD-codeblock span.cm-inline-code {
   display: inherit;
@@ -678,9 +678,9 @@
 .cm-s-hypermd-light .hmd-fold-html-stub, .cm-s-hypermd-light .hmd-fold-code-stub {
   display: inline-block;
   font-size: 60%;
-  color: #887e82;
+  color: #9e9d9e;
   vertical-align: middle;
-  padding: 0.2em;
+  padding: 0.2em 0.4rem;
   border-radius: 5px;
   cursor: pointer;
 }
