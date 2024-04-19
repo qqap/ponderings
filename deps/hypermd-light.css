@@ -677,14 +677,11 @@
 }
 .cm-s-hypermd-light .hmd-fold-html-stub, .cm-s-hypermd-light .hmd-fold-code-stub {
   display: inline-block;
-  font-size: 67%;
-  color: #999;
+  font-size: 60%;
+  color: #887e82;
   vertical-align: middle;
-  border: 1px solid #999;
-  padding: 0 0.2em;
+  padding: 0.2em;
   border-radius: 5px;
-  margin: 0 0.5em;
-  background: #FAFAFA;
   cursor: pointer;
 }
 .cm-s-hypermd-light .hmd-fold-html-stub.omittable, .cm-s-hypermd-light .omittable.hmd-fold-code-stub {
@@ -692,8 +689,7 @@
 }
 .cm-s-hypermd-light .hmd-fold-html-stub:hover, .cm-s-hypermd-light .hmd-fold-code-stub:hover, .cm-s-hypermd-light .hmd-fold-html-stub.highlight, .cm-s-hypermd-light .highlight.hmd-fold-code-stub {
   color: #FFF;
-  border-color: #C30;
-  background: #F40;
+  background: #cabbc2;
 }
 .cm-s-hypermd-light .hmd-fold-html {
   position: relative;
