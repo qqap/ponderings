@@ -20,8 +20,8 @@ _alternative italic_
 ~~strikethrough~~
 
 ```plantuml
-node dog #Orange
-node cat #LightGreen
+node dog #orange
+node cat #lightgreen
 dog -[dotted]> cat: Hello
 ```
 
