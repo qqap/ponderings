@@ -94,18 +94,14 @@ $$\begin{align*}
 $\int_{t_0-\varepsilon}^{t_0+\varepsilon} f(t)\,\delta(t-t_0)\,\mathrm{d}t = f(t_0)$
 
 ```plantuml
-@startuml
-allowmixing
-
 component Component
-()        Interface
+() Interface
 
 json table {
-   "fruit":"Apple",
-   "size":"Large",
+   "fruit" :"Apple",
+   "size": "Large",
    "color": ["Red", "Green"]
 }
-@enduml
 ```
 
 That's all :rabbit: ...
