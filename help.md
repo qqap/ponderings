@@ -93,6 +93,16 @@ $$\begin{align*}
 
 $\int_{t_0-\varepsilon}^{t_0+\varepsilon} f(t)\,\delta(t-t_0)\,\mathrm{d}t = f(t_0)$
 
+$\underbrace{a+b+c}_{\text{note}}$
+
+$$\def\arraystretch{1.5}
+   \begin{array}{c:c:c}
+   a & dog & c \\ \hline
+   d & e & f \\
+   \hdashline
+   g & h & i
+\end{array}$$
+
 ```plantuml
 component Component
 () Interface
