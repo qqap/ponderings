@@ -24,7 +24,7 @@
         }) 
 
     data.then((value) => {
-        el.innerHTML += value.replace('background:#FFFFFF','').replace(/textLength="\d+"/g, '');
+        el.innerHTML += value.replace('background:#FFFFFF','').replace(/textLength="\d*\.?\d*"/g, '');
     });    
     
     return el;
