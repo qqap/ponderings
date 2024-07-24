@@ -1057,11 +1057,11 @@
 .katex-display {
   display: block;
   margin: 1em 0;
-  text-align: center;
+  /* text-align: center; */
 }
 .katex-display > .katex {
   display: block;
-  text-align: center;
+  /* text-align: center; */
   white-space: nowrap;
 }
 .katex-display > .katex > .katex-html {

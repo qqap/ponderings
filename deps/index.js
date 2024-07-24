@@ -32,7 +32,8 @@ KatexRenderer.prototype.startRender = function (expr) {
     var el = this.el, errorEl = this.errorEl;
     try {
         katex.render(expr, el, {
-            displayMode: this.isDisplay
+            displayMode: true,
+            // strict: false,
         });
         // remove "error" mark if exists
         if (errorEl.parentElement === el) {

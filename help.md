@@ -26,9 +26,9 @@ dog -[dotted]> cat: Hello
 ```
 
 ```plantuml
-node "<color:white>browser</color>" as b #purple
-cloud "<color:white>cloud</color>" as w #lightblue
-database bucket as bu #cornsilk
+node "<color:white>node</color>" as b #purple
+cloud "<color:black>zebra</color>" as w #lightblue
+database thing as bu #cornsilk
 
 b -> w : Sentence
 w -> b : Another Sentence
@@ -76,3 +76,36 @@ fn fizzbuzz() {
     sit amet velit.
 
 2.  Suspendisse id sem consectetuer libero luctus adipiscing.
+
+$\frac{1}{2}$ is a fraction 
+
+$$\begin{align*}
+  F(x) G(x)
+    &= \left(\sum_{n \geq 0} f_n \frac{x^n}{n!}\right) \left(\sum_{n \geq 0}
+      g_n \frac{x^n}{n!}\right) \\
+    &= \sum_{n \geq 0} \sum_{0 \leq k \leq n} \frac{f_k}{k!}
+    \frac{g_{n-k}}{(n-k)!} x^n \\
+    &= \sum_{n \geq 0} \left(\sum_{0 \leq k \leq n} \binom{n}{k} f_k
+      g_{n-k} \right) \frac{x^n}{n!} \\
+    &= \sum_{n \geq 0} \left(\sum_{0 \leq k \leq n} f_k \cdot_B
+      g_{n-k} \right) \frac{x^n}{n!}
+\end{align*}$$
+
+$\int_{t_0-\varepsilon}^{t_0+\varepsilon} f(t)\,\delta(t-t_0)\,\mathrm{d}t = f(t_0)$
+
+```plantuml
+@startuml
+allowmixing
+
+component Component
+()        Interface
+
+json table {
+   "fruit":"Apple",
+   "size":"Large",
+   "color": ["Red", "Green"]
+}
+@enduml
+```
+
+That's all :rabbit: ...
