@@ -91,6 +91,25 @@ h5 {
     a.click();
   }
 
+  function getQueryParam(param) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param);
+  }
+
+  function loadContent() {
+    const ignoreStorage = getQueryParam('ignoreStorage');
+    const textParam = getQueryParam('text');
+
+    if (ignoreStorage === 'true') {
+      if (textParam) {
+        return decodeURIComponent(textParam);
+      }
+      return '';
+    } else {
+      return localStorage.getItem("bloby") || '';
+    }
+  }
+
 </script>
 
 <body>
@@ -168,7 +187,7 @@ h5 {
 
 
     var myTextarea = document.getElementById('input-box')
-    myTextarea.textContent = localStorage.getItem("bloby")
+    myTextarea.textContent = loadContent();
     var editor = HyperMD.fromTextArea(myTextarea, {
       // for code fence highlighting
       // theme: "gruvbox-dark"
@@ -184,7 +203,9 @@ h5 {
 
 <script>
   document.body.onkeyup = function (e) {
-    localStorage.setItem("bloby", editor.getValue());
+    if (getQueryParam('ignoreStorage') !== 'true') {
+      localStorage.setItem("bloby", editor.getValue());
+    }
   };
 </script>
 
